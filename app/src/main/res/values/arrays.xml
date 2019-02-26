@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="intentr" >
+        <item>ReycyleView1</item>
+        <item>ReycyleView2</item>
+        <item>IntentExplicutImplicit</item>
+    </string-array>
+</resources>
