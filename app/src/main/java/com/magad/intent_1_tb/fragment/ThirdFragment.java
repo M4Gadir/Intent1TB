@@ -57,15 +57,15 @@ public class ThirdFragment extends Fragment {
         btntiga.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                switch (getView().getId()){
+                switch (getView().getId()) {
                     case R.id.button3:
                         if (edttiga.getText().toString().trim().length() == 0) {
-                        edttiga.setError("antum lupa mengisi url disini");
+                            edttiga.setError("antum lupa mengisi url disini");
+                        }else{
+                            startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www" + String.valueOf(edttiga.getText()))));
                         }
                         break;
                 }
-
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://www" + String.valueOf(edttiga.getText()))));
             }
         });
 
